@@ -21,6 +21,9 @@ module Conversion
     #Minutes past time test
     elsif m<30
       time="#{text[m]} minutes past #{text[h]}";
+    #Minutes to time test
+    else
+      time="#{text[60-m]} minutes to #{text[h+1]}";
     end
 
     return time
