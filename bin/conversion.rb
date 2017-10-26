@@ -18,6 +18,9 @@ module Conversion
     #Quarter to time test
     elsif m==45
       time="quarter to #{text[h+1]}";
+    #Minutes past time test
+    elsif m<30
+      time="#{text[m]} minutes past #{text[h]}";
     end
 
     return time
