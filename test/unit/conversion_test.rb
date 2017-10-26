@@ -16,7 +16,7 @@ class ConversionText < Minitest::Test
 
   #Half past time test
   def test_half_past
-    assert_equal "half past thirteen", "half past thirteen"
+    assert_equal "half past thirteen", Conversion.time2text(13, 30)
   end
 
   #Minutes past time test

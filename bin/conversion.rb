@@ -12,6 +12,9 @@ module Conversion
     # Quarter past time test
     elsif m==15
       time="quarter past #{text[h]}";
+    #Half past time test
+    elsif m==30
+      time="half past #{text[h]}";
     end
 
     return time
