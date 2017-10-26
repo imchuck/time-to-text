@@ -23,4 +23,9 @@ class ConversionText < Minitest::Test
     assert_equal "ten minutes past nine", "ten minutes past nine"
   end
 
+  #Minutes to time test
+  def test_minutes_to
+    assert_equal "ten minutes to eleven", "ten minutes to eleven"
+  end
+
 end
