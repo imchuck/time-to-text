@@ -11,7 +11,7 @@ class ConversionText < Minitest::Test
 
   # Quarter past time test
   def test_quarter_past
-    assert_equal "quarter past two", "quarter past two"
+    assert_equal "quarter past two", Conversion.time2text(2, 15)
   end
 
   #Half past time test

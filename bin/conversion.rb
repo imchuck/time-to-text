@@ -9,6 +9,9 @@ module Conversion
     # O'clock time (sharp) test
     if m==0
       time="#{text[h]} o' clock";
+    # Quarter past time test
+    elsif m==15
+      time="quarter past #{text[h]}";
     end
 
     return time
