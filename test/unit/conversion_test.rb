@@ -1,11 +1,12 @@
 #! /usr/bin/env ruby
 require 'minitest/autorun'
+require '../../bin/conversion'
 
 class ConversionText < Minitest::Test
 
   # O'clock time (sharp) test
   def test_oclock
-    assert_equal "ten o' clock", "ten o' clock"
+    assert_equal "ten o' clock", Conversion.time2text(10, 0)
   end
 
   # Quarter past time test

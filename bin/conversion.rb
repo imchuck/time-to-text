@@ -5,7 +5,13 @@ module Conversion
     				"eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty",
             "twenty one","twenty two","twenty three","twenty four","twenty five",
             "twenty six","twenty seven","twenty eight","twenty nine"];
-    return
+
+    # O'clock time (sharp) test
+    if m==0
+      time="#{text[h]} o' clock";
+    end
+
+    return time
   end
 
 end
