@@ -8,4 +8,9 @@ class ConversionText < Minitest::Test
     assert_equal "ten o' clock", "ten o' clock"
   end
 
+  # Quarter past time test
+  def test_quarter_past
+    assert_equal "quarter past two", "quarter past two"
+  end
+
 end
